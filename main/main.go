@@ -1,9 +1,6 @@
 package main
 
-import (
-	"fmt"
-	"go-start/basic"
-)
+import "go-start/basic"
 
 func main() {
 
@@ -28,10 +25,13 @@ func main() {
 
 	//basic.Func1("GO")
 
-	res := 0
-	for i := 0; i < 10; i++ {
-		res = basic.Fibonacci(i)
-		fmt.Printf("%d %d\n", i, res)
-	}
-
+	//res := 0
+	//for i := 0; i < 10; i++ {
+	//	res = basic.Fibonacci(i)
+	//	fmt.Printf("%d %d\n", i, res)
+	//}
+	//basic.Print10to1(1)
+	//fmt.Println()
+	//basic.Print10to1(5)
+	basic.Function_param(2, basic.Callback)
 }

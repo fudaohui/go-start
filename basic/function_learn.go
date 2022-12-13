@@ -1,5 +1,8 @@
-// Package basic go语言中的函数学习
+// Package basic go语言中的函数学习.
+// 重点是：求解大事需要拆解为小事，小事解决了大事自然而然就解决了。小事求解到一定的程度必须有退出条件
 package basic
+
+import "fmt"
 
 /*
 Fibonacci 斐波那契数列数列计算，使用递归的方式。斐波那契数列形式如下：
@@ -11,4 +14,22 @@ func Fibonacci(n int) (res int) {
 		return 1
 	}
 	return Fibonacci(n-1) + Fibonacci(n-2)
+}
+
+// Print10to1  10到n 的数据打印
+func Print10to1(i int) {
+	if i > 10 {
+		return
+	}
+	Print10to1(1 + i)
+	fmt.Printf("%d ", i)
+}
+
+// Function_param 函数参数，回调的使用
+func Function_param(n int, f func(n1 int, n2 int)) {
+	f(n+1, n+2)
+}
+
+func Callback(n1 int, n2 int) {
+	fmt.Printf("%d-%d", n1, n2)
 }
