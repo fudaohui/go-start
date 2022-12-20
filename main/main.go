@@ -33,5 +33,6 @@ func main() {
 	//basic.Print10to1(1)
 	//fmt.Println()
 	//basic.Print10to1(5)
-	basic.Function_param(2, basic.Callback)
+	//basic.Function_param(2, basic.Callback)
+	basic.ExecTimeCacl()
 }
